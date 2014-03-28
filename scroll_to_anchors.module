@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Enables scrolling to anchor links.
+ */
+
+/**
+ * Implements hook_help().
+ */
+function scroll_to_anchors_help($path, $arg) {
+  switch ($path) {
+    case 'admin/help#scroll_to_anchors':
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t("This modules let's users modify anchor links to make them scroll. Script Creator's site here: <a href='@scroll_to_anchors'>Better html anchor</a>.", array('@scroll_to_anchors' => 'http://www.position-absolute.com/articles/better-html-anchor-a-jquery-script-to-slide-the-scrollbar/')) . '</p>';
+      $output .= '<h3>' . t('Usage:') . '</h3';
+      $output .= '<p>' . t('1. in your anchor link add the class anchorLink <a href=”#anchorTarget” class=”anchorLink”>') . '</p>';
+      $output .= '<p>' . t('2. in your anchor target put an id and a name for your html anchor. <a name=”anchorTarget” id=”anchorTarget” >') . '</p>';
+      return $output;
+  }
+}

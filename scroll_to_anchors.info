@@ -1,0 +1,10 @@
+name = Scroll to Anchors
+description = Makes provisions so anchor tags can be made scrollable
+package = User interface
+core = 7.x
+
+scripts[] = scroll_to_anchors.js
+
+version = "7.x-dev"
+core = "7.x"
+project = "scroll_to_destination_anchors"

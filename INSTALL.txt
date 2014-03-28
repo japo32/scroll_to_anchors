@@ -1,0 +1,7 @@
+**Installation:
+1. Unpack to sites/all/modules/ or sites/all/modules/contrib
+2. Enable the Scroll to Anchors module
+3. in your anchor link add the class anchorLink <a href=”#anchorTarget” class=”anchorLink”>
+4. in your anchor target put an id and a name for your html anchor. <a name=”anchorTarget” id=”anchorTarget” >
+
+
